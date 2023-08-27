@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages{
+        stage('job1'){
+            steps{
+                git 'https://github.com/Sonal0409/DevOpsCodeDemo.git'
+            }
+        }
+        stage('job2'){
+            steps{
+                sh 'echo "SUCCESSFULLY GOT TO STAGE 3"'
+            }
+        }
+    }
+}
