@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages{
+        stage('job1'){
+            steps{
+                sh 'mkdir fight-me'
+            }
+        }
+        stage('job2'){
+            steps{
+                sh 'echo "SUCCESSFULLY GOT TO STAGE 3"'
+            }
+        }
+    }
+}
